@@ -5,8 +5,26 @@ permalink: /about/
 feature-img: "img/sample_feature_img_2.png"
 ---
 
-Type Theme is a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+A Web Developer by trade, I actually enjoy learning programming languages, analysing, understanding and getting to the bottom of things.
 
-Head over to the [theme's documentation](https://rohanchandra.github.io/project/type/) for much more information about Type Theme or to install this theme on your own Jekyll site.
+I love to keep things clear and simple. I care about how you feel when embarking on a tech project and enjoy dismantling over-complicated jargon, allowing you to feel in the know and in control. Not overwhelmed.
 
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
+I enjoy working remotely (I get to see my wife and little one on my lunch break!) but with today’s communication technology we are always in touch.
+
+Need some advice, just fancy a chat, I would love to help, so don’t hesitate to get in touch.
+
+
+
+### Skills <!--maybe add icons for all below? -->
+    
+* HTML(5)
+* CSS(3)
+* JavaScript
+* JQuery
+* Git & GitHub
+    
+
+### Education
+
+* Bloc
+* London School of Economoics and Political Science (LSE)
