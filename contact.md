@@ -12,7 +12,7 @@ Bacon ipsum dolor amet filet mignon meatball spare ribs fatback bacon shankle. K
 <!-- The form-handler is typically a server page with a script for processing input data. -->
 <form action="https://getsimpleform.com/messages?form_api_token=515748d70b0da90e17b166b0ab05a86e" method="post">
   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-  <input type='hidden' name='redirect_to' value='http://samibirnbaum.github.io/thank-you' />
+  <input type='hidden' name='redirect_to' value='http://samibirnbaum.com/thank-you' />
   <input type='text' name='name' placeholder='Your Full Name' />
   <input type='email' name='email' placeholder='Your E-mail Address' />
   <textarea name='message' placeholder='Write your message ...'></textarea>
