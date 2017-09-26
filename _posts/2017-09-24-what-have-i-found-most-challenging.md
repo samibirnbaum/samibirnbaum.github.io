@@ -14,7 +14,9 @@ For example, learning JavaScript as an object orientated programming language fo
 
 However, for some weird reason, although overwhelming at first i actually enjoy taking something new and complex, investigating it, breaking it down, simplifying it and acquiring a good understanding of it. Perhaps its reliving the lego building process of yesteryear where you destroy an entire space station to find out whats really happening underneath, get chased by your older brother, and then rebuild it with a far greater understanding and fear of your older brother than you ever had to begin with. 
 
-And with this is a small insight into what I find most challenging about programming (at least at the moment). It may be worlds apart from what you find challenging or this may resonate with you entirley. Always feel free to get in touch, if my own challenges can be of any assistance to you I would be happy to help!
+And with this is a small insight into what I find most challenging about programming (at least at the moment). It may be worlds apart from what you find challenging or this may resonate with you entirley. 
+
+Always feel free to get in touch, if my own challenges can be of any assistance to you I would be happy to help!
 
 
 *[pulpectomy]: root canal therapy involving complete removal of dental pulp from a tooth
