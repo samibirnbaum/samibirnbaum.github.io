@@ -6,7 +6,7 @@ feature-img: "img/color.png"
 hide: true
 ---
 
-##Thanks for getting in touch!##
+Thanks for getting in touch!
 
 I genuinely do appreciate hearing from people and look at every message.
 
