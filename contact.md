@@ -2,11 +2,13 @@
 layout: page
 title: Contact
 permalink: /contact/
-feature-img: "img/color.png"
+feature-img: "img/sample_feature_img_2.png"
 ---
+Please feel free to get in touch.
 
-Bacon ipsum dolor amet filet mignon meatball spare ribs fatback bacon shankle. Kielbasa andouille fatback salami, boudin bresaola pig alcatra turkey spare ribs jerky. Corned beef bresaola leberkas salami alcatra beef landjaeger venison shank bacon meatloaf beef ribs picanha. Leberkas sausage brisket porchetta shankle prosciutto chicken picanha kielbasa pig kevin t-bone turducken filet mignon jowl.
+I would love to hear from you and would be happy to offer any advice and help in any way I can!
 
+You can use the form below or hit the email icon in the top right hand corner of the screen.
 <!-- The action attribute defines the action to be performed when the form is submitted. -->
 <!-- Normally, the form data is sent to a web page on the server when the user clicks on the submit button. -->
 <!-- The form-handler is typically a server page with a script for processing input data. -->
