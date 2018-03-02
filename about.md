@@ -16,13 +16,16 @@ Need some advice, just fancy a chat, I would love to help, so don’t hesitate t
 
 
 ### Skills <!--maybe add icons for all below? -->
-    
-* HTML(5)
-* CSS(3)
-* JavaScript
-* JQuery
-* Git & GitHub
-    
+
+* Front end &nbsp;
+	* HTML(5)
+	* CSS(3)
+	* JavaScript
+    * JQuery
+	* AngularJS
+	* Ruby
+	* Ruby on Rails
+	* Git & GitHub
 
 ### Education
 
