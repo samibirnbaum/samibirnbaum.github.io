@@ -9,6 +9,7 @@ Please feel free to get in touch.
 I would love to hear from you and would be happy to offer any advice and help in any way I can!
 
 You can use the form below or hit the email icon in the top right hand corner of the screen.
+<br><br>
 <hr color="gray">
 <!-- The action attribute defines the action to be performed when the form is submitted. -->
 <!-- Normally, the form data is sent to a web page on the server when the user clicks on the submit button. -->
@@ -17,11 +18,12 @@ You can use the form below or hit the email icon in the top right hand corner of
   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
   <input type='hidden' name='redirect_to' value='http://samibirnbaum.com/thank-you' />
   <br/><br/>
-  <input type='text' name='name' placeholder='Your Full Name' />
+  <!-- <label for="full-name">Your Name</label> <br> -->
+  <input type='text' id="full-name" name='name' required="true" autofocus="true" placeholder='Your Full Name..' />
   <br/><br/>
-  <input type='email' name='email' placeholder='Your E-mail Address' />
+  <input type='email' name='email' required="true" placeholder='Your E-mail Address..' />
   <br/><br/>
-  <textarea name='message' placeholder='Write your message ...'></textarea>
+  <textarea name='message' required="true" placeholder='Write your message ...'></textarea>
   <br/><br/>
   <input type='submit' value='Send Message' />
 </form>

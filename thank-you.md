@@ -12,5 +12,7 @@ I genuinely do appreciate hearing from people and look at every message.
 
 I aim to reply to people within one day.
 
-All the best,
-Sami
+All the best,<br>
+
+![alt text](../img/thankyou/sig.png "My Signature")
+<hr color="gray">
