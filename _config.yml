@@ -7,7 +7,7 @@ theme_settings:
   # Meta
   title: Sami Birnbaum
   avatar: avatar.png
-  gravatar: http://www.gravatar.com/avatar/fdac9cf8b3c18cf35ef94b2e6e2554ba.jpg?r=g
+  gravatar: https://www.gravatar.com/avatar/fdac9cf8b3c18cf35ef94b2e6e2554ba.jpg?f=y
   description: "A website about sami birnbaum with blog posts and pages" # used by search engines
 
   # Header and footer text

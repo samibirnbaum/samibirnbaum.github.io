@@ -9,6 +9,7 @@ Please feel free to get in touch.
 I would love to hear from you and would be happy to offer any advice and help in any way I can!
 
 You can use the form below or hit the email icon in the top right hand corner of the screen.
+<hr color="gray">
 <!-- The action attribute defines the action to be performed when the form is submitted. -->
 <!-- Normally, the form data is sent to a web page on the server when the user clicks on the submit button. -->
 <!-- The form-handler is typically a server page with a script for processing input data. -->
