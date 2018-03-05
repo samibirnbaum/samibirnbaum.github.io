@@ -9,7 +9,7 @@ Call me one-dimensional if you wish, but for me personally it is worth extrapala
 
 In essence therefore, what motivates me as a developer is exactly what motivates me in my day to day existence.
 
-So that being the case, what simply does it for me (apart from ancient texts(LINK))?
+So that being the case, what simply does it for me (apart from [ancient texts](https://samibirnbaum.com/2017/09/25/how-i-ended-up-here.html#ancient){:target="_blank"})?
 
 Well, for some reason, I really do have a genuine drive to help others, not a programming motivation i here you say. Well yes on the surface you are right. But look deeper and its a multi-dimensional motivation which envokes an honest, genuine desire to help you.
 
