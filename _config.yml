@@ -7,8 +7,8 @@ theme_settings:
   # Meta
   title: Sami Birnbaum
   avatar: avatar.png
-  gravatar: # Email MD5 hash
-  description: "A website with blog posts and pages" # used by search engines
+  gravatar: http://www.gravatar.com/avatar/fdac9cf8b3c18cf35ef94b2e6e2554ba.jpg?r=g
+  description: "A website about sami birnbaum with blog posts and pages" # used by search engines
 
   # Header and footer text
   header_text: >
