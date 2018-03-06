@@ -14,7 +14,7 @@ I enjoy working remotely (I get to see my wife and little one on my lunch break!
 Need some advice, just fancy a chat, I would love to help, so don’t hesitate to get in touch.
 <hr color="gray">
 
-### Skills <!--maybe add icons for all below? -->
+### Skills
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Frontend
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HTML(5) <br>

@@ -7,6 +7,8 @@ short-description: A music based application
 
 ---
 
+[Source Code on Git Hub](https://github.com/samibirnbaum/bloc-jams){:target="_blank"}
+<hr color="gray">
 <!-- CASE STUDY HERE -->
 <!-- Summary -->
 ### Summary
@@ -16,8 +18,19 @@ My first ever build of an application from scratch.
 
 Welcome to Bloc Jams, a digital music player like Spotify that I built to learn frontend web development.
 
-**This is not supposed to be a  finished product** but was part of the learning process of my web development course with Bloc (CREATE LINK) covering core programming topics.
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spec:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HTML(5) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CSS(3) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JavaScript <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JQuery <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AngularJS <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Git & Git Hub <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Buzz Library](http://buzz.jaysalvat.com/){:target="_blank"} <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Ionicons](http://ionicons.com/){:target="_blank"} <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Netlify](https://www.netlify.com/){:target="_blank"}
 
+**This is not supposed to be a  finished product** but was part of the learning process of my web development course with [Bloc](https://www.bloc.io/){:target="_blank"} covering core programming topics.
+<hr color="gray">
 <!-- my role  -->
 ### My Role
 <!--    - backstory, who and why? -->
@@ -26,13 +39,14 @@ To create this application as a sole developer, working remotely, completing spe
 <!--    - explanation / relationship you had to the project -->
 It was time for me to be thrown into the deep end! Use HTML(5) to build up the content of the application, CSS(3) to style that content for a sleek UI appearance and JavaScript to create attractive dynamic functionality.
 
-Implement two JavaScript libraries: JQuery, and Buzz(LINK) to manage sounds.
+Implement two JavaScript libraries: JQuery, and [Buzz](http://buzz.jaysalvat.com/){:target="_blank"} to manage sounds.
 
 Use Git to maintain a local repository of the project and a remote repository on GitHub, and use feature branches to ensure a smooth workflow and secure version control.
 
 Lastly, deploy my application, enhancing my knowledge of Hosting, DNS and Domain Names. 
-
+<hr color="gray">
 <!-- Problem -->
+
 ### Problems
 <!--    - problems you were hired to solve -->
 Some of the many ~~problems~~ challenges faced in building this application.
@@ -55,8 +69,9 @@ Some of the many ~~problems~~ challenges faced in building this application.
 <br/><br/>
 <!--    - -->
 5. &nbsp;JavaScript/Angular
-
+<hr color="gray">
 <!-- Solution -->
+
 ### Solutions
 <!--    - -->
 1. &nbsp;This was not a challenging task, however, becoming familiar with new doccumentation
@@ -86,7 +101,7 @@ Some of the many ~~problems~~ challenges faced in building this application.
     </div>
 </section> 
 {% endhighlight %}
-After developing clear and concise HTML I moved on to the CSS creating a user friendly bar using ionicons (LINK).
+After developing clear and concise HTML I moved on to the CSS creating a user friendly bar using [ionicons](http://ionicons.com/){:target="_blank"}.
 <br/><br/>
 One of the trickier parts was building the song progress and volume bars ("seek bars"):
 {% highlight html %}
@@ -140,7 +155,7 @@ Lastly, the music player bar was to remain at the botttom of the users view of t
 This was achieved using CSS:
 {% highlight css %}
  .player-bar {
-     position: fixed; /*explain what each of these did*/
+     position: fixed;
      bottom: 0;
      left: 0;
      right: 0;
@@ -149,16 +164,75 @@ This was achieved using CSS:
      z-index: 100;
  }
 {% endhighlight %}
+<br/><br/>
 <!--    - list (after screenshots / code snippers) -->
-3\. &nbsp; In order to acheive responsiveness I opted to use media queries. Media queries... 
+3\. &nbsp; The most basic starting point was to set the viewport meta tag.
+{% highlight html %}
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+{% endhighlight %}
+ &nbsp;  &nbsp; &nbsp; &nbsp; This meant that the page now scaled to fit the width of the users device.
+
+ &nbsp;  &nbsp; &nbsp; &nbsp; However, things still didnt look quite right...
+
+ &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; ![alt text](../img/blocjams/bloc_jams_mobile_with_viewport.png "Mobile View")
+
+ &nbsp;  &nbsp; &nbsp; &nbsp; The three `divs` at the bottom of the page were aligned next to each other using `display:`&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; `table-cell;` each with a `width: 33.3%;`, however to prevent the user from having to 
+ &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp;&nbsp; scroll left or right on smaller screens, ideally, it would be great to have them break out of this 
+ &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; fixed table and stack on top of each other for smaller devices.
+{% highlight html %}
+<!--The three divs-->
+ <section class="selling-points">
+    <div class="point">
+        <span class="ion-music-note"></span>
+        <h5 class="point-title">Choose your music</h5>
+        <p class="point-description">The world is full of music; why should you have to listen to music that someone else chose?</p>
+    </div>
+    <div class="point">
+        <span class="ion-radio-waves"></span>
+        <h5 class="point-title">Unlimited, streaming, ad-free</h5>
+        <p class="point-description">No arbitrary limits. No distractions.</p>
+    </div>
+    <div class="point">
+        <span class="ion-iphone"></span>
+        <h5 class="point-title">Mobile enabled</h5>
+        <p class="point-description">Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
+    </div>
+</section>
+{% endhighlight %}
+
+&nbsp;  &nbsp; &nbsp; &nbsp; Say hello to Media Queries.
+
+&nbsp;  &nbsp; &nbsp; &nbsp; I created my own grid system which would align the `divs` next to each other whilst being 
+&nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; viewed on a medium size screen. If the viewport dropped below the size of a medium screen, 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I would use media queries to turn my grid system off, allowing the `divs` to fall back into the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'normal flow' of the doccument and stack on top of each other.
+{% highlight css %}
+ @media (min-width: 640px) {
+     html { font-size: 112%; }
+
+     .column {
+         float: left;
+         padding-left: 1rem;
+         padding-right: 1rem;
+     }
+ 
+     .column.full { width: 100%; }
+     .column.two-thirds { width: 66.7%; }
+     .column.half { width: 50%; }
+     .column.third { width: 33.3%; }
+     .column.fourth { width: 25%; }
+     .column.flow-opposite { float: right; }
+ }
+{% endhighlight %}
 <br/><br/>
 <!--    - -->
 4\. &nbsp; JavaScript/Angular
 <br/><br/>
 <!--    - -->
 5\. &nbsp; JavaScript/Angular
-
+<hr color="gray">
 <!-- Results -->
+
 ### Results
 <!--    - how you tested -->
 Given this application was only using front-end web technologies. I had two options for testing, either setting up a local server or simply opening my files in the browser itself. I opted for the latter as this met my needs and was quicker to implement.
@@ -170,7 +244,9 @@ I was able to achieve the desired outcomes of the course project. However, given
 <br/><br/>
 <!--    - others reviews -->
 Feedback from my codementor was positive.
+<hr color="gray">
 <!-- Conclusion -->
+
 ### Conclusion
 <!--    - What were your doubts going into the project? -->
 Going into my first ever project I was excited but naturally I had doubts, I was being thrown into the deep end, being asked to use high-tech skills to problem solve some tricky tasks and ultimatley produce a working application.
@@ -180,10 +256,9 @@ What surprised me the most was actually the amount of good, solid, well written 
 <br/><br/>
 <!--    - What would you have done differently? -->
 <!--    - What did you learn while doing this project? -->
-Perhaps one of the most important things i learnt whilst doing this project, beyond the inherent skills themselves, was actually the resources that i could turn to when i felt like i had hit a brick wall.
+Perhaps one of the most important things I learnt whilst doing this project, beyond the inherent skills themselves, was actually the resources that I could turn to when I felt like I had hit a brick wall.
 <br/><br/>
-Becoming familar with asking the right questions and communicating with others over slack (LINK) or resoursces like stack overflow (LINK) proved incredibly helpful, when sometimes it takes someone else to see or problem solve from a different angle than you have been pursuing.
+Becoming familar with asking the right questions and communicating with others over [slack](https://slack.com/){:target="_blank"} or resoursces like [stack overflow](https://stackoverflow.com/){:target="_blank"} proved incredibly helpful, when sometimes it takes someone else to see or problem solve from a different angle than you have been pursuing.
 <br/><br/>
 <!--    - How will you use that information in the future? -->
-Going forward, this learning curve, i am sure, will prove its worth, as being able to utilise and engage with the wider coding community can make (almost) any problem, challenge or task achievable.
-
+Going forward, this learning curve, I am sure, will prove its worth, as being able to utilise and engage with the wider coding community can make (almost) any problem, challenge or task achievable.
