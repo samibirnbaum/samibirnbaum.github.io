@@ -65,10 +65,10 @@ Some of the many ~~problems~~ challenges faced in building this application.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;different size screens from wide screen tv's to laptops to mobiles.
 <br/><br/>
 <!--    - -->
-4. &nbsp;JavaScript/Angular
+4. &nbsp;Include JQuery in your application, refactor vanilla javascript DOM scripting, reap the rewards.
 <br/><br/>
 <!--    - -->
-5. &nbsp;JavaScript/Angular
+5. &nbsp;Refactor the whole app to use the frontend framework AngularJS
 <hr color="gray">
 <!-- Solution -->
 
@@ -226,10 +226,144 @@ This was achieved using CSS:
 {% endhighlight %}
 <br/><br/>
 <!--    - -->
-4\. &nbsp; JavaScript/Angular
+4\. &nbsp; I used a CDN to pull the JQuery library into my app.
+{% highlight html %}
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+{% endhighlight %}
+
+Now I was able to evolve from using DOM selectors to JQuery selectors.
+
+This gave me better cross browser support and allowed me to use CSS-style syntax. Overall, this enabled my coding to be more efficent and run more smoothly.
+
+**Time to refactor some of my JavaScript:**
+
+Do you remember those three `divs` we made responsive above, how cool if we could make those animated!
+{% highlight javascript %}
+//THE ORIGINAL VANILLA JAVASCRIPT
+window.onload = function() {
+
+    // Automatically animates the points on a tall screen where scrolling can't trigger the animation
+    if (window.innerHeight > 950) {
+        animatePoints(pointsArray);
+    }
+    
+    //Animate the points when user scrolls to them
+    var sellingPoints = document.getElementsByClassName('selling-points')[0];
+    var scrollDistance = sellingPoints.getBoundingClientRect().top - window.innerHeight + 200;
+
+    window.addEventListener("scroll", function(event) {
+        if (document.documentElement.scrollTop || document.body.scrollTop >= scrollDistance) {
+            animatePoints(pointsArray);
+        }
+    });
+}
+{% endhighlight %}
+
+And now using the power of JQuery:
+{% highlight javascript %}
+//USING JQUERY
+$(window).load(function() {
+
+    // Automatically animates the points on a tall screen where scrolling can't trigger the animation
+    if ($(window).height() > 950) {
+         animatePoints();
+    }
+    
+    //Animate the points when user scrolls to them
+    var scrollDistance = $('.selling-points').offset().top - $(window).height() + 200;
+
+    $(window).scroll(function(event) {
+        if ($(window).scrollTop() >= scrollDistance) {
+            animatePoints();
+        }
+    });
+});
+{% endhighlight %}
+
+Refactoring my code (like the example above) using JQuery selectors as well as methods from the JQuery library allowed my coding and my app to become far more efficient.
 <br/><br/>
 <!--    - -->
-5\. &nbsp; JavaScript/Angular
+5\. &nbsp; I would be lying if I didn't say that this task was very hard and arduous at times. It meant taking the app I had written using vanilla Javascript and JQuery, and writing it again using a JavaScript framework, which had its own rules for frontend implementation, including an MVC architectual design. Moreover, AngularJS has quite a steep learning curve with a fair bit of new terminology.
+
+However, tackling this learning curve would allow my app to utilise some of angulars core features such as two-way data binding and single page application design.
+
+It is not possible to include everything I did here, but by way of example lets take a look at how I transformed BlocJams into a single page application.
+
+**Creating the Templates:**
+
+`index.html` would act as the global file for Bloc Jams. It would be the page that the user would navigate to, and all other data to be displayed to the user would simply be rendered on this page, without the browser navigating to a separate page.
+
+To implement this we added `<ui-view></ui-view>` tags to `index.html` 
+{% highlight html %}
+ ...
+ <body>
+     <nav class="navbar">
+         ... <!--ellipsis indicates existence of other code left our for brevity-->
+     </nav>
+
+     <ui-view></ui-view>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+     <script src="/scripts/app.js"></script>
+ </body>
+ </html>
+{% endhighlight %}
+
+Views to be rendered in the global file were created in the `app/templates` directory.
+* `bloc-jams-angular/app/templates/landing.html`
+* `bloc-jams-angular/app/templates/collection.html`
+* `bloc-jams-angular/app/templates/album.html`
+
+**Creating the Routes:**
+
+To display these templates in the view, Angular uses routing, which is organized around URL routes. Angular has a built-in router, but Bloc advised that many developers don't use it.
+
+Instead, we were advised use [UI-Router](https://ui-router.github.io/){:target="_blank"} because it is more flexible and features behaviors not found in the Angular tools.
+
+Using dependency injection UI-Router was injected into the apps root module.
+
+{% highlight javascript %}
+angular.module('blocJams', ['ui.router']);
+{% endhighlight %}
+
+Time to configure paths and states:
+
+{% highlight javascript %}
+(function(){
+    function config ($stateProvider, $locationProvider) {  /*configuring default behaviour of a module with providers*/
+        $locationProvider /*SET properties on the location object*/
+            .html5Mode({
+                enabled: true, /*disables hashbang url when user changes location*/
+                requireBase: false            
+            });
+        $stateProvider /*SET default settings for the state*/ /*manipulate the url to load in a template*/
+            .state("landing", { /*name of the state*/
+                url: "/",       /*its url in the browser*/
+                controller: "LandingCtrl as landing",
+                templateUrl: "/templates/landing.html" /*for this landing state, this is the template html*/
+            })
+            .state("album", {
+                url: "/album",
+                controller: "AlbumCtrl as album",
+                templateUrl: "/templates/album.html"
+            })
+            .state("collection", {
+                url: "/collection",
+                controller: "CollectionCtrl as collection",
+                templateUrl: "/templates/collection.html"
+            });
+    }
+    
+    angular
+        .module("blocJams", ["ui.router"])
+        .config(config); /*our providers (configuration) added to the root module here*/
+
+})();
+{% endhighlight %}
+
+Although, the configuration was very involved, once set up, this transformed BlocJams into an SPA.
+
+In order to trigger a state UI-Router provided this tag `<a ui-sref="album">`.
 <hr color="gray">
 <!-- Results -->
 
@@ -240,7 +374,7 @@ Given this application was only using front-end web technologies. I had two opti
 Juidicious use of the DOM within google chromes development tool allowed for thorough testing, catching any mistakes or bugs, fixing and then re-testing again.
 <br/><br/>
 <!--    - did you get desired outcome -->
-I was able to achieve the desired outcomes of the course project. However, given this was only for learning purposes there are naturally things that were not required, which in time i would like to implement or complete.
+I was able to achieve the desired outcomes of the course project. However, given this was only for learning purposes there are naturally things that were not required, which in time I would like to implement or complete.
 <br/><br/>
 <!--    - others reviews -->
 Feedback from my codementor was positive.
