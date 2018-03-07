@@ -2,7 +2,7 @@
 layout: post
 title: BlocJams
 feature-img: "img/sample_feature_img.png"
-thumbnail-path: "img/blocjams/blocjams-thumbnail.png"
+thumbnail-path: "img/projects/blocjams/blocjams-thumbnail.png"
 short-description: A music based application
 
 ---
@@ -58,7 +58,7 @@ Some of the many ~~problems~~ challenges faced in building this application.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;programming) allow users to pause and play songs, view and adjust playback progress, and 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;adjust volume, using a combination of HTML and CSS.
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![alt text](../img/blocjams/musicplayerbar.png "Music Player Bar")
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![alt text](../img/projects/blocjams/musicplayerbar.png "Music Player Bar")
 <br/><br/>
 <!--    - list reasons (before screenshots) -->
 3. &nbsp;Achieve Responsive Web Development - ensure that the appplication looks beautiful on all 
@@ -174,7 +174,7 @@ This was achieved using CSS:
 
  &nbsp;  &nbsp; &nbsp; &nbsp; However, things still didnt look quite right...
 
- &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; ![alt text](../img/blocjams/bloc_jams_mobile_with_viewport.png "Mobile View")
+ &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; ![alt text](../img/projects/blocjams/bloc_jams_mobile_with_viewport.png "Mobile View")
 
  &nbsp;  &nbsp; &nbsp; &nbsp; The three `divs` at the bottom of the page were aligned next to each other using `display:`&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; `table-cell;` each with a `width: 33.3%;`, however to prevent the user from having to 
  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp;&nbsp; scroll left or right on smaller screens, ideally, it would be great to have them break out of this 

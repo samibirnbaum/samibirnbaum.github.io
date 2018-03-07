@@ -11,16 +11,19 @@ layout: default
   {% endif %}
 
   <div class="work">
-    <h2>My Work</h2>
-    {% for project in site.portfolio limit:3 %}
+    <h2>My Projects</h2>
+    {% for project in site.portfolio limit:10 %}
         <li>
           <img src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
           <a href="{{ project.url }}">{{ project.title }}</a>
           <p>{{ project.short-description }}</p>
         </li>
     {% endfor %}
+    <hr color="gray">
   </div>
-
+  
+  
+  
   <div class="posts">
     <h2>My Posts</h2>
     {% for post in paginator.posts %}
@@ -40,6 +43,7 @@ layout: default
         <a class="button" href="{{ post.url | prepend: site.baseurl }}">
           {{ site.theme_settings.str_continue_reading }}
         </a>
+        <hr color="gray">
       </div>
     </div>
     {% endfor %}
