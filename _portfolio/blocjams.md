@@ -2,7 +2,7 @@
 layout: post
 title: BlocJams
 feature-img: "img/sample_feature_img.png"
-thumbnail-path: "img/projects/blocjams/blocjams-thumbnail.png"
+thumbnail-path: "img/projects/blocjams/blocjams-thumbnail2.png"
 short-description: A music based application
 
 ---

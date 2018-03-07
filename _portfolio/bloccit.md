@@ -2,7 +2,7 @@
 layout: post
 title: Bloccit
 feature-img: "img/sample_feature_img.png"
-thumbnail-path: "img/projects/blocchat/bloc-chat.png"
+thumbnail-path: "img/projects/bloccit/bloccit.png"
 short-description: A forum using Ruby on Rails
 
 ---
