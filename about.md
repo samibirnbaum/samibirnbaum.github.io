@@ -25,7 +25,8 @@ Need some advice, just fancy a chat, I would love to help, so don’t hesitate t
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Backend
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ruby <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ruby on Rails <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ruby on Rails<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ERB
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Other
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Git & GitHub <br>
@@ -33,6 +34,7 @@ Need some advice, just fancy a chat, I would love to help, so don’t hesitate t
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ruby Gems (Devise, Pundit etc..) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RVM (including gem sets) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bootstrap <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Heroku (CLI) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Remote work proficiency (Slack, Zoom, Pomodoro technique etc..) <br>
 <hr color="gray">
 
