@@ -64,7 +64,7 @@ Lastly, I was asked to deploy my application on [Heroku](https://www.heroku.com/
 
 ### Problems
 <!--    - problems you were hired to solve -->
-Building an application from scratch meant their were numerous tasks and problems that needed to be solved. Given the limited scope of this work I will attempt to name a few to give you an insight into the generic challenges faced and my approach to them.
+Building an application from scratch meant there were numerous tasks and problems that needed to be solved. Given the limited scope of this work I will attempt to name a few to give you an insight into the generic challenges faced and my approach to them.
 
 <!-- list 3 -->
 1. &nbsp;Bloccit users will need to be able to _post_ information and _comment_ on those posts. Posts and comments will need to persist; that is, they'll need to be saved to a database so users can interact with them across sessions.  <br/><br/>
