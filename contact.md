@@ -15,7 +15,7 @@ You can use the form below or hit the email icon in the top right hand corner of
 <form action="https://getsimpleform.com/messages?form_api_token=de85fca5406099e946210cda2d92b29f" method="post">
   <input type='hidden' name='redirect_to' value='http://samibirnbaum.com/thank-you' />
   <br/><br/>
-  <input type='text' id="full-name" name='name' required="true" autofocus="true" placeholder='Your Full Name..' />
+  <input type='text' id="full-name" name='name' required="true" placeholder='Your Full Name..' />
   <br/><br/>
   <input type='email' name='email' required="true" placeholder='Your E-mail Address..' />
   <br/><br/>

@@ -8,7 +8,7 @@ theme_settings:
   title: Sami Birnbaum
   avatar: avatar.png
   # gravatar: https://www.gravatar.com/avatar/fdac9cf8b3c18cf35ef94b2e6e2554ba.jpg?f=y
-  description: "A website about sami birnbaum with blog posts and pages" # used by search engines
+  description: "Sami Birnbaum's Portfolio => Projects | Case Studies | Posts | Contact | About" # used by search engines
 
   # Header and footer text
   header_text: >
