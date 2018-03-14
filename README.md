@@ -1,15 +1,20 @@
 # Portfolio Iro Theme
 ## Based on Type Theme
 
-![Default Type Theme blog](https://bloc-global-assets.s3.amazonaws.com/portfolio/portfolio-iro.png)
+![Snapshot](img/portfolio-snapshot.png "Modal")
+
+[Visit Site](https://samibirnbaum.com){:target="_blank"}
 
 A free and open-source [Jekyll](http://jekyllrb.com) theme. Great for blogs and easy to customize.
 
-## Get Started
+##Usage
 
-[Demo](https://rohanchandra.github.io/type-theme/)
-
-[Using Type](https://rohanchandra.github.io/project/type/)
+1. Fork and clone the repo: `git clone https://github.com/samibirnbaum/samibirnbaum.github.io.git`
+2. You must have Ruby installed
+3. Install Jekyll: `gem install jekyll`
+4. Install the theme's dependencies: `bundle install`
+5. Customize the site - [Further Guidance](https://github.com/rohanchandra/type-theme){:target="_blank"}
+6. Run the Jekyll server: `jekyll serve`
 
 ## License
 The MIT License (MIT)
