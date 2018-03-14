@@ -5,6 +5,9 @@ permalink: /about/
 feature-img: "img/sample_feature_img_2.png"
 ---
 
+[Full Resumé](https://resume.creddle.io/resume/5oxg6wwhosz){:target="_blank"}
+<hr color="gray">
+
 A Web Developer by trade, I actually enjoy learning programming languages, analysing, understanding and getting to the bottom of things.
 
 I love to keep things clear and simple. I care about how you feel when embarking on a tech project and enjoy dismantling over-complicated jargon, allowing you to feel in the know and in control. Not overwhelmed.

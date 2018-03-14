@@ -12,7 +12,7 @@ What have I, or do I, find most challenging about programming? For me personally
 
 For example, learning JavaScript as an object orientated programming language for the first time was very challenging. Its a brand new concept and it's complex at times. Moreover, when you try and find definitions for certain aspects, the definition can often include references to other concepts which hitherto are unknown. Thus, it can feel very overwhelming at first and take time to break down a new concept/language and gain a good understanding in order to venture forward.
 
-However, the greater the challenge the greater the reward. Although overwhelming at first i actually enjoy taking something new and complex, investigating it, breaking it down, simplifying it and acquiring a good understanding of it.
+However, the greater the challenge the greater the reward. Although overwhelming at first I actually enjoy taking something new and complex, investigating it, breaking it down, simplifying it and acquiring a good understanding of it.
 
 Perhaps its reliving the lego building process of yesteryear where you destroy an entire space station to find out whats really happening underneath, get chased by your older brother, and then rebuild it with a far greater understanding and fear of your older brother than you ever had to begin with.
 
