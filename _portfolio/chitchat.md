@@ -1,13 +1,13 @@
 ---
 layout: post
-title: BlocChat
+title: Chit Chat
 feature-img: "img/sample_feature_img.png"
-thumbnail-path: "img/projects/blocchat/bloc-chat.png"
+thumbnail-path: "img/projects/chitchat/chitchat.png"
 short-description: Creating a chat room
 
 ---
 
-[Source Code on Git Hub](https://github.com/samibirnbaum/bloc-chat){:target="_blank"}
+[Source Code on Git Hub](https://github.com/samibirnbaum/chitchat){:target="_blank"}
 <hr color="gray">
 
 
@@ -18,7 +18,7 @@ short-description: Creating a chat room
 <!--    - starting point >>> outcome -->
 A frontend chat room 'style' application.
 
-Welcome to BlocChat, an application that sends and receives messages in real time using [Firebase](https://firebase.google.com/){:target="_blank"} and AngularJS.
+Welcome to Chit Chat, an application that sends and receives messages in real time using [Firebase](https://firebase.google.com/){:target="_blank"} and AngularJS.
 
 <!--tech used-->
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spec:
@@ -66,7 +66,7 @@ Naturally, there were numerous challenges throughout this project, including ~~i
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;these chat rooms from Firebase and display them on the frontend to the user?<br/><br/>
 <!--    - -->
 2. &nbsp;Initiate a modal on the frontend, using [UI Bootstrap](http://angular-ui.github.io/bootstrap/versioned-docs/2.5.0/#!#top){:target="_blank"}, for a user to create a new chat room. <br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![alt text](../img/projects/blocchat/modal2.png "Modal")
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![alt text](../img/projects/chitchat/modal2.png "Modal")
 <br/><br/>
 <!----->
 3. &nbsp;Efficiently store a users username so you can display it every time they visit the site and write something in a chat room.<br/><br/>
