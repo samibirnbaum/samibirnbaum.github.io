@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bloccit
+title: Going Postal
 feature-img: "img/sample_feature_img.png"
-thumbnail-path: "img/projects/bloccit/bloccit.png"
+thumbnail-path: "img/projects/goingpostal/goingpostal.png"
 short-description: A forum using Ruby on Rails
 
 ---
 
 [Visit the Site](https://polar-brushlands-91836.herokuapp.com/){:target="_blank"}<br>
-[Source Code on Git Hub](https://github.com/samibirnbaum/bloccit){:target="_blank"}
+[Source Code on Git Hub](https://github.com/samibirnbaum/goingpostal){:target="_blank"}
 <hr color="gray">
 
 
@@ -19,7 +19,7 @@ short-description: A forum using Ruby on Rails
 <!--    - starting point >>> outcome -->
 My first ever build of an application using Ruby on Rails.
 
-Welcome to Bloccit, a [Reddit](https://www.reddit.com/){:target="_blank"} type application where people can post, vote, favorite and comment. 
+Welcome to Going Postal, a [Reddit](https://www.reddit.com/){:target="_blank"} type application where people can post, vote, favorite and comment. 
 
 Ruby was the second programming language I learnt following JavaScript and the Ruby on Rails framework was my introduction to web development on the backend.
 
@@ -67,7 +67,7 @@ Lastly, I was asked to deploy my application on [Heroku](https://www.heroku.com/
 Building an application from scratch meant there were numerous tasks and problems that needed to be solved. Given the limited scope of this work I will attempt to name a few to give you an insight into the generic challenges faced and my approach to them.
 
 <!-- list 3 -->
-1. &nbsp;Bloccit users will need to be able to _post_ information and _comment_ on those posts. Posts and comments will need to persist; that is, they'll need to be saved to a database so users can interact with them across sessions.  <br/><br/>
+1. &nbsp;Going Postal users will need to be able to _post_ information and _comment_ on those posts. Posts and comments will need to persist; that is, they'll need to be saved to a database so users can interact with them across sessions.  <br/><br/>
 <!--    - -->
 2. &nbsp;Seed a Ruby on Rails application with test data.<br/><br/>
 <!----->
@@ -81,9 +81,9 @@ Building an application from scratch meant there were numerous tasks and problem
 <!--    - -->
 1. &nbsp;Time to get to grips with the M in MVC<sup id="a1">[1](#MVC)</sup> and the way Ruby on Rails handles databases.
 
-![alt text](../img/projects/bloccit/MVC.png "MVC Diagram")
+![alt text](../img/projects/goingpostal/MVC.png "MVC Diagram")
 
-The first model I created is `Post`. Users should have the ability to submit posts to Bloccit with titles and descriptions, so the Post model and its corresponding database table will need two attributes: `title` and `body`.
+The first model I created is `Post`. Users should have the ability to submit posts to Going Postal with titles and descriptions, so the Post model and its corresponding database table will need two attributes: `title` and `body`.
 
 `$ rails generate model Post title:string body:text`
 
@@ -91,7 +91,7 @@ In rails this produced three important files. The model itself as a Ruby class `
 
 I then created the `Comment` model in the same way, only with two attributes. `body` and `post_id`. This last attribute on the Comment model allowed me to create an association in the database between Posts and Comments. Given that a post could have many comments, it made sense to store a foreign key (the id for the post that the comment was writte on) inside the row of each comment in the database.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![alt text](../img/projects/bloccit/comments-posts-database.png "MVC Diagram")
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![alt text](../img/projects/goingpostal/comments-posts-database.png "MVC Diagram")
 
 With the models set up and the database structured, I could continue to set about developing the frontend to allow users to submit posts and comments knowing that they would persist in the database. 
 
@@ -258,7 +258,7 @@ Lastly, I utilised this Instance Variable `@posts` using `ERB` on the frontend t
 With these steps I begun to build out my post resource, which I then continued to develop.
 
 
-**Note:** These were by far not the hardest problems or challenges faced when building this application, for more complex functionality please feel free to look over the [source code on Git Hub](https://github.com/samibirnbaum/bloccit){:target="_blank"}. However, the idea is that you can get a feel for some of the problems and my systematic approach to them.
+**Note:** These were by far not the hardest problems or challenges faced when building this application, for more complex functionality please feel free to look over the [source code on Git Hub](https://github.com/samibirnbaum/goingpostal){:target="_blank"}. However, the idea is that you can get a feel for some of the problems and my systematic approach to them.
 <br/><br/>
 <!--    - -->
 <hr color="gray">
@@ -288,17 +288,17 @@ Initially I was concerened about the lack of visualisation when embarking on a b
 
 The truth could not have been more different. On the contrary, I felt that there was far more clarity and understanding of an application when working on it from the backend. It gave me a complete birds eye view of the project, allowing me to understand and juggle different pieces of the application.<br><br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![alt text](../img/projects/bloccit/bloccit-diagram.png "Project Diagram")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![alt text](../img/projects/goingpostal/goingpostal-diagram.png "Project Diagram")<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*My birds eye view*
 
 <!--    - What would you have done differently? -->
 <br>
-Arguably, I could have utilised many more Ruby Gems to produce certain features and functionality for Bloccit. However, being forced to create my own random data, authorisation and authentication for users, really helped me in understanding how these things work under the hood. As a result of this, in the future when I went on to use gems such as [Faker](https://rubygems.org/gems/faker){:target="_blank"} and [Devise](https://rubygems.org/gems/devise){:target="_blank"}, this helped immensely. 
+Arguably, I could have utilised many more Ruby Gems to produce certain features and functionality for Going Postal. However, being forced to create my own random data, authorisation and authentication for users, really helped me in understanding how these things work under the hood. As a result of this, in the future when I went on to use gems such as [Faker](https://rubygems.org/gems/faker){:target="_blank"} and [Devise](https://rubygems.org/gems/devise){:target="_blank"}, this helped immensely. 
 
 <!--    - What did you learn while doing this project? -->
 The biggest and most valuable learning curve whilst undertaking this project, was to really be able to build a working diagram of how the internet works.<br><br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![alt text](../img/projects/bloccit/server.png "Internet Diagram")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![alt text](../img/projects/goingpostal/server.png "Internet Diagram")<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Yes I actually drew this myself*
 <br><br>
 To pull all the pieces together that until now had sometimes seemed disparate or incoceivable. This level of comprehension, although still developing, not only helped me on the backend but also with all the coding on the frontend. 
