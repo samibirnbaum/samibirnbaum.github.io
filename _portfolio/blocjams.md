@@ -7,7 +7,7 @@ short-description: A music based application
 
 ---
 
-[Source Code on Git Hub](https://github.com/samibirnbaum/bloc-jams){:target="_blank"}
+[Source Code on Git Hub](https://github.com/samibirnbaum/bloc-jams-angularjs){:target="_blank"}
 <hr color="gray">
 <!-- CASE STUDY HERE -->
 <!-- Summary -->

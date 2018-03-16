@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blocipedia
+title: Samipedia
 feature-img: "img/sample_feature_img.png"
-thumbnail-path: "img/projects/blocipedia/blocipedia.png"
+thumbnail-path: "img/projects/samipedia/samipedia.png"
 short-description: A wiki site using Ruby on Rails
 
 ---
 [Visit the Site](https://vast-atoll-63143.herokuapp.com/){:target="_blank"}<br>
-[Source Code on Git Hub](https://github.com/samibirnbaum/blocipedia){:target="_blank"}
+[Source Code on Git Hub](https://github.com/samibirnbaum/samipedia){:target="_blank"}
 <hr color="gray">
 
 
@@ -18,7 +18,7 @@ short-description: A wiki site using Ruby on Rails
 <!--    - starting point >>> outcome -->
 A fully fledged Ruby on Rails CRUD application encompassing some staple Ruby Gems.
 
-Welcome to Blocipedia, an application that allows users to create public and private Markdown-based wikis.
+Welcome to Samipedia, an application that allows users to create public and private Markdown-based wikis.
 
 Ruby was the second programming language I learnt following JavaScript and the Ruby on Rails framework was my introduction to web development on the backend.
 
@@ -57,7 +57,7 @@ Given my desire get to the bottom of things and understand the inner workings, I
 
 I was provided with User Stories <sup id="a2">[2](#UserStories)</sup> that I had to comprehend and complete.
 * As a user, I want to sign up for a free account by providing a user name, password and email
-* As a user, I want to sign in and out of Blocipedia
+* As a user, I want to sign in and out of samipedia
 * As a user with a standard account, I want to create, read, update, and delete public wikis	
 * As a developer, I want to offer three user roles: admin, standard, or premium	
 * As a developer, I want to seed the development database automatically with users and wikis
@@ -234,11 +234,11 @@ Great, three different user roles, which carry different permissions throughout 
 <!--    - -->
 2\. &nbsp; I decided that as well as allowing users to upgrade their account from standard to premium.
 
-![alt text](../img/projects/blocipedia/upgrade.png "Upgrade Option")
+![alt text](../img/projects/samipedia/upgrade.png "Upgrade Option")
 
 I also wanted users to be have the option to sign up for a premium account initially. This meant editing Devise's built-in sign up view.
 
-![alt text](../img/projects/blocipedia/signup.png "Sign Up")
+![alt text](../img/projects/samipedia/signup.png "Sign Up")
 
 Additionally I needed to edit Devise's `registrations` controller, so I could redirect a user who opted to sign up for a premium account to the `new charge` view, where I could take a payment through Stripe before changing the role on their account to premium.
 {% highlight ruby %}
@@ -259,7 +259,7 @@ end
 
 Now, I could redirect the User to the `new charge` view and allow my `charges controller` to handle the Stripe payment and upgrade the users account accordingly.
 
-![alt text](../img/projects/blocipedia/payment.png "Stripe Payment")
+![alt text](../img/projects/samipedia/payment.png "Stripe Payment")
 
 The code in the charges controller to facilitate the Stripe payment:
 
@@ -492,7 +492,7 @@ If very neccessary these could be combined to two scenarios, no access and yes a
 
 
 
-**Note:** These were not necessarily the hardest problems or challenges faced when building this application, for more complex functionality please feel free to look over the [source code on Git Hub](https://github.com/samibirnbaum/blocipedia){:target="_blank"}. However, the idea is that you can get a feel for some of the problems and my systematic approach to them.
+**Note:** These were not necessarily the hardest problems or challenges faced when building this application, for more complex functionality please feel free to look over the [source code on Git Hub](https://github.com/samibirnbaum/samipedia){:target="_blank"}. However, the idea is that you can get a feel for some of the problems and my systematic approach to them.
 <br/><br/>
 <!--    - -->
 <hr color="gray">
