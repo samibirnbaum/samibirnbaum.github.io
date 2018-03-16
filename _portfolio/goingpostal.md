@@ -2,7 +2,7 @@
 layout: post
 title: Going Postal
 feature-img: "img/sample_feature_img.png"
-thumbnail-path: "img/projects/goingpostal/goingpostal.png"
+thumbnail-path: "img/projects/goingpostal/snapshot.png"
 short-description: A forum using Ruby on Rails
 
 ---
