@@ -1,13 +1,13 @@
 ---
 layout: post
-title: BlocJams
+title: Tuneage
 feature-img: "img/sample_feature_img.png"
 thumbnail-path: "img/projects/blocjams/blocjams-thumbnail2.png"
 short-description: A music based application
 
 ---
 
-[Source Code on Git Hub](https://github.com/samibirnbaum/bloc-jams-angularjs){:target="_blank"}
+[Source Code on Git Hub](https://github.com/samibirnbaum/tuneage){:target="_blank"}
 <hr color="gray">
 <!-- CASE STUDY HERE -->
 <!-- Summary -->
@@ -16,7 +16,7 @@ short-description: A music based application
 <!--    - starting point >>> outcome -->
 My first ever build of an application from scratch.
 
-Welcome to Bloc Jams, a digital music player like Spotify that I built to learn frontend web development.
+Welcome to Tuneage, a digital music player like Spotify that I built to learn frontend web development.
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spec:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HTML(5) <br>
@@ -287,11 +287,11 @@ Refactoring my code (like the example above) using JQuery selectors as well as m
 
 However, tackling this learning curve would allow my app to utilise some of angulars core features such as two-way data binding and single page application design.
 
-It is not possible to include everything I did here, but by way of example lets take a look at how I transformed BlocJams into a single page application.
+It is not possible to include everything I did here, but by way of example lets take a look at how I transformed Tuneage into a single page application.
 
 **Creating the Templates:**
 
-`index.html` would act as the global file for Bloc Jams. It would be the page that the user would navigate to, and all other data to be displayed to the user would simply be rendered on this page, without the browser navigating to a separate page.
+`index.html` would act as the global file for Tuneage. It would be the page that the user would navigate to, and all other data to be displayed to the user would simply be rendered on this page, without the browser navigating to a separate page.
 
 To implement this we added `<ui-view></ui-view>` tags to `index.html` 
 {% highlight html %}
@@ -361,7 +361,7 @@ Time to configure paths and states:
 })();
 {% endhighlight %}
 
-Although, the configuration was very involved, once set up, this transformed BlocJams into an SPA.
+Although, the configuration was very involved, once set up, this transformed Tuneage into an SPA.
 
 In order to trigger a state UI-Router provided this tag `<a ui-sref="album">`.
 <hr color="gray">
