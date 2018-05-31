@@ -4,6 +4,7 @@ title: What I Find Challenging
 ---
 
 **In life we all find different things challenging**, what may be second nature to one person can be just as easily foreign to another and vice versa. The same rings true in various different industries. Lets examine Dentists. To one dentist performing a pulpectomy is (nearly) as simple as a walk in the park, to another dentist its the equivalent of walking up mount vesuvius in flip-flops.<br/> 
+<!--more-->
 Note: neither Dentist is subordinate to the other, it is just the nature of all of us in all settings to find different aspects more challenging than others.
 
 So, where am I going with this?.. It is true this would be a good introduction to actually begin to relate a number of things I may find challenging in life as a whole. But lets quickly limit the question to the sphere of programming. Phew!

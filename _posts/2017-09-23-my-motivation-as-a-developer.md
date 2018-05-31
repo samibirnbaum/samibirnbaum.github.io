@@ -4,7 +4,7 @@ title: My Motivation As A Developer
 ---
 
 **The title of this post is deceptive**. Let me explain. There is an underlying assumption in the title that motivation can be isolated and confined to the work place. This may be true in some cases. But you didnt come all this way to read about *some cases* you came here (for some unearthly reason) to read about me.
-
+<!--more-->
 Call me one-dimensional if you wish, but for me personally it is worth extrapalating this title to incorporate my motivation as a **human-being**. Ergo, I have always found that the motivations I possess in life as a whole, must also exist and blossom in my place of work.
 
 In essence therefore, what motivates me as a developer is exactly what motivates me in my day to day existence.

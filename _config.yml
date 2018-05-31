@@ -74,3 +74,6 @@ sass:
 plugins:
   - jekyll-paginate
   - jemoji
+
+# This comment in a post tells it what to display on home page from the post
+excerpt_separator: <!--more-->

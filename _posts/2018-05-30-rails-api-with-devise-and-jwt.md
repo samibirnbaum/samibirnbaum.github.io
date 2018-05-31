@@ -5,6 +5,8 @@ title: Rails! API!! Devise!!! JWT's!!!!
 
 **How do any of us end up anywhere?** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Well.. we dip our little toe in the water, and then we wait.. we wait for that freezing cold sensation which we expect to rush through our system and when it doesn't come we breathe a deep sigh of relief and sink into that nice warm bath.
 
+<!--more-->
+
 And since dipping my toe into the ocean that be called 'programming' I am yet to retract from the ice cold water (mind you though, it can get pretty cold at times).
 
 The straight and narrow path:<br/>
