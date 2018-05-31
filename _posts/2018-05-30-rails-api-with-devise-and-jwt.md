@@ -3,20 +3,35 @@ layout: post
 title: Rails! API!! Devise!!! JWT's!!!!
 ---
 
-**How do any of us end up anywhere?** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Well.. we dip our little toe in the water, and then we wait.. we wait for that freezing cold sensation which we expect to rush through our system and when it doesn't come we breathe a deep sigh of relief and sink into that nice warm bath.
+**I had dreamed this day would finally come...** Ok that's a bit melodramatic, but to say I hadn't lay awake thinking about this concept would be wholly untrue...
 
 <!--more-->
 
-And since dipping my toe into the ocean that be called 'programming' I am yet to retract from the ice cold water (mind you though, it can get pretty cold at times).
+My journey into web-development started with all the good stuff on the frontend, as it does for most people. I even went the whole hog and threw in a framework (AngularJS) just for good measure. But now I was in Star Wars territory, this was the life of a server-side developer, time to separate the men from the boys (at least in my child-like mind).
 
-The straight and narrow path:<br/>
-I went to school like most people (in London where i was born and raised) and following school I undertook my undergraduate degree BSc from [The London School of Economics](../../../img/posts/lse-certificate.png){:target="_blank"}, one of the top universities in the country. However, although providing me with riguoruos academic analysis of the social political landscape and criminological theses. I didn't leave LSE with a defined skill, more an amulgamation of academic disciplines (not to say that this hasn't been handy).
+Welcome Ruby on Rails. This was great, I could build a whole application back-to-front using this single framework Ruby on Rails. But hold on one second... If I could build everything with Rails, then what was the point of all the really cool frontend frameworks that everyone was raving about (currently React).
 
-The ~~interesting~~ different path:<br id="ancient">
-Following university, I became rather interested in languages. No, not the computer sort. But.. the ancient sort. I spent time on a course learning the skills to translate Biblical Hebrew and, wait for it.. Aramaic. This study of ancient texts, propelled me into a world of new languages, and Talmudic study, requiring thorough rigurous analysis, organisation, sturcture and clarity. I loved it and I now teach a course in Biblical Hebrew and still continue to pursuit this source of study in my spare time.
+Well unfortunately it turns out that if you wanted to build an application using Ruby on Rails, you would miss out on all the cool functionality of the frontend frameworks like single page applications and 2-way data binding.
 
-From this stand-point the progression into programming was almost logical (more of a dipping toe in the water experience if i'm honest). I can now utiliste these core principles and disciplines of learning ancient languages to learn some of the most modern languages that exist today. And continuously engage in learning, thorough rigurous analysis, organisation, sturcture and clarity.
+This left me in quite a predicament. I could have a really bespoke backend with Ruby on Rails but sub-standard frontend views. Or I could have a really bespoke frontend with Angular but a sub-standard database-as-a-service backend.
 
-And here I am.
+Well I wanted both (I screamed, lying down kicking my legs against the floor).
 
-Please feel free to ask any questions, and if i can help with any advice from my own mistakes and successes along the way I would be happy to help!
+I wanted to have my cake _and_ eat it!
+
+Why couldn't I have a bespoke backend using Rails and a bespoke frontend using whichever framework I so desired?
+
+This pursuit led me to the crazy world of **Rails! API!! Devise!!! JWT's!!!!**
+
+I would build my backend using Rails new API mode. This would allow my backend to be completely agnostic and interact with whichever frontend I wanted. I needed to set up a good authentication system, especially as I was using an API, but I was able to do this using Devise and JWT's.
+
+Once I had the backend working as its own unit, as an API, I would be free to connect to that backend using HTTP requests from whichever frontend I desired, Angular, React, or even Android and IOS Applications.
+
+Admittedly, this would be far more work but think of the benefits in the long-run. I would have one backend for all different forms of my application. I could have a native mobile application and a website all running off one single backend. Moreover, as the pace of change on the frontend gets ever more Usain-Bolt-like I would be able to adapt my frontend to the latest designs without being concerning about the star wars server side stuff.
+
+Time to sit back, have my cake **and** eat it!
+
+In my personal opinion, this division of labour between the backend and the frontend is how applications (especially sizeable ones) should be built. But hey! What do I know?! I'm just a developer with a child-like mind.
+
+[A project I built using this methodology](https://samibirnbaum.com/portfolio/memorial-notifier-api.html){:target="_blank"}. 
+
