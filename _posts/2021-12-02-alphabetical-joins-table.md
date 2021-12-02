@@ -8,6 +8,8 @@ Imagine we have 2 models
 - Area
 - Lane
 
+<!--more-->
+
 and you want to create a standard Joins Table with just an `area_id` and `lane_id`.
 
 When you create the table via a migration Rails will automatically create the joins table with the folloing naming convention __in alphabetical order__ `areas_lanes`.
