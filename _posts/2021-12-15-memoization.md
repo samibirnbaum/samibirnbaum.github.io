@@ -51,7 +51,7 @@ In all 3 methods we have the exact same line of code `clan = Clan.find(params[:c
 
 Fear not, we can clean this up by using a `before_action` to do the exact same thing:
 
-```
+```Ruby
 class UserController
   before_action :set_clan
   
@@ -95,7 +95,7 @@ end
 Check this out =>
 
 
-```
+```Ruby
 class UserController  
   def index
     users = clan.users
@@ -142,7 +142,7 @@ But hold on a second, I spot a performance issue....
 
 Take a look at the index method:
 
-```
+```Ruby
 def index
   users = clan.users
 
@@ -157,7 +157,7 @@ Enter "Memoization"...
 
 This'll fix it 🪛
 
-```
+```Ruby
  def clan
    @clan ||= Clan.find(params[:clan_id])
  end
@@ -168,7 +168,7 @@ Great! But this is not easy to read, so what is this wizadry? 🧙‍♂️
 
 Lets write the same method without the `||=`
 
-```
+```Ruby
  def clan
     if @clan.present?
       @clan
