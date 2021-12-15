@@ -9,7 +9,7 @@ Let's go on a journey into the world of memoization through the medium of ~~danc
 
 Once upon a time there was a controller with 3 typical methods:
 
-```
+```Ruby
 class UserController
   def index
     clan = Clan.find(params[:clan_id])
