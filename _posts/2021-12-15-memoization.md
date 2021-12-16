@@ -9,6 +9,8 @@ Let's go on a journey into the world of memoization through the medium of ~~danc
 
 Once upon a time there was a controller with 3 typical methods:
 
+{% highlight ruby %}
+
 ```Ruby
 class UserController
   def index
@@ -44,6 +46,8 @@ class UserController
 end
 
 ```
+
+{% endhighlight %}
 
 And all was well and good until 'DRY' came along and said "No, not by the hairs on my chinny chin chin..."
 
