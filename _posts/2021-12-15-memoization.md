@@ -190,4 +190,8 @@ When it gets called a second time at `render locals: {users: users, clan: clan}`
 
 Not only is this DRY, but it also means we don't have to use a `before_action` and we learnt a cool way to utilise Memoization.
 
-The End. 👊
+And they all lived happily ever after. The End. 👊
+
+*******************
+
+Co-authored with [David Young](https://dcyoung.dev/)
