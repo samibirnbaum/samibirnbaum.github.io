@@ -52,7 +52,8 @@ In all 3 methods we have the exact same line of code `clan = Clan.find(params[:c
 
 Fear not, we can clean this up by using a `before_action` to do the exact same thing:
 
-```Ruby
+{% highlight ruby %}
+
 class UserController
   before_action :set_clan
   
@@ -89,14 +90,15 @@ class UserController
   end
 end
 
-```
+{% endhighlight %}
 
 "DRY" was happy with this and managed to calm down, until "Memoization" came along and said what if I can get rid of your `before_action` altogether 🤯
 
 Check this out =>
 
 
-```Ruby
+{% highlight ruby %}
+
 class UserController  
   def index
     users = clan.users
@@ -131,7 +133,7 @@ class UserController
   end
 end
 
-```
+{% endhighlight %}
 
 Notice what we did?
 
@@ -143,14 +145,15 @@ But hold on a second, I spot a performance issue....
 
 Take a look at the index method:
 
-```Ruby
+{% highlight ruby %}
+
 def index
   users = clan.users
 
   render locals: {users: users, clan: clan}
 end
 
-```
+{% endhighlight %}
 
 We call `clan` 2 times which means we will be hitting our database twice in order to retrieve the `Clan` record from the database.
 
@@ -158,18 +161,20 @@ Enter "Memoization"...
 
 This'll fix it 🪛
 
-```Ruby
+{% highlight ruby %}
+
  def clan
    @clan ||= Clan.find(params[:clan_id])
  end
 
-```
+{% endhighlight %}
 
 Great! But this is not easy to read, so what is this wizadry? 🧙‍♂️
 
 Lets write the same method without the `||=`
 
-```Ruby
+{% highlight ruby %}
+ 
  def clan
     if @clan.present?
       @clan
@@ -179,7 +184,7 @@ Lets write the same method without the `||=`
     end
   end
     
-```
+{% endhighlight %}
 
 Now this is more readable.
 
