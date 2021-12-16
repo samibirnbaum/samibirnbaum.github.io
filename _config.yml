@@ -67,8 +67,6 @@ collections:
 
 # BUILD SETTINGS
 markdown: kramdown
-highlighter: rouge
-input: GFM
 sass:
   sass_dir: _sass
   style: :compressed
