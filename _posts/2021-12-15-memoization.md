@@ -11,7 +11,6 @@ Once upon a time there was a controller with 3 typical methods:
 
 {% highlight ruby %}
 
-```Ruby
 class UserController
   def index
     clan = Clan.find(params[:clan_id])
@@ -44,8 +43,6 @@ class UserController
     params.require(:user).permit(:name, :power)
   end
 end
-
-```
 
 {% endhighlight %}
 
