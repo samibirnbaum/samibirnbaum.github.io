@@ -45,7 +45,7 @@ When Spurs would try to play a match they would not be able to do so.
   # HarryKaneGoneError
 {% endhighlight %}
 
-Our `TottenhamHotspurFootballClub` class is pretty unflexible and relies heavily on `HarryKane`.
+Our `TottenhamHotspurFootballClub` class is pretty inflexible and relies heavily on `HarryKane`.
 
 So how could Dependency Injection allow Spurs to survive and keep playing even if Harry Kane was unavailable.
 
@@ -86,7 +86,7 @@ So we could do something like this:
 {% endhighlight %}
 
 One of the key things here is that the `TottenhamHotspurFootballClub` class doesn't really need to care much about who or what the striker is, it can get on
-with doing its thing, only being concerned that it has received a striker.
+with doing its own thing, only being concerned that it has received a striker.
 
 Bonus: This would also help us test the `TottenhamHotspurFootballClub` class in isolation 👊.
 
