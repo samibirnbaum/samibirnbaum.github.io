@@ -105,3 +105,5 @@ Thing.perform(1,2,3)
 # => 1
 
 {% endhighlight %}
+
+Credit to [this article](https://www.honeybadger.io/blog/ruby-splat-array-manipulation-destructuring/) which helped to shape my understanding.
