@@ -39,15 +39,15 @@ x = *123
 
 If you think about this, it is doing two very different things.
 
-One takes an array and removes the surrounding [].
+One takes an array and **removes** the surrounding [].
 
 `[123]` becomes `123`
 
-The other takes a value and adds the surrounding [].
+The other takes a value and **adds** the surrounding [].
 
 `*123` becomes `[123]`.
 
-The only question we need to answer then is when does it destruct and when does it construct?
+The only question we need to answer then is when does it destruct and when does it construct? 🤔
 
 If you use it when **defining a method** it will take any argument you give it and **construct** it into an array.
 
@@ -105,5 +105,13 @@ Thing.perform(1,2,3)
 # => 1
 
 {% endhighlight %}
+
+_As an aside, the reason for the above class method of `perform`, is so you can easily call
+`Thing.perform()`, without having to first instantiate the object._
+
+_Using `*args` means that if our expected parameters in the `initialize` method were to change
+we would never have to change them in the `perform` class method._
+
+******************************
 
 Credit to [this article](https://www.honeybadger.io/blog/ruby-splat-array-manipulation-destructuring/) which helped to shape my understanding.
