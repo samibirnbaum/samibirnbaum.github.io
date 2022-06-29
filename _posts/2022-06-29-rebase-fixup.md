@@ -14,7 +14,7 @@ In order to do this you are doing an interactive rebase using the command `git r
 
 Running `git rebase -i main` opens the following in your editor:
 
-{% highlight ruby %}
+{% highlight bash %}
 
 pick 996b0 work in progress
 pick 59f3a feature finished
@@ -54,7 +54,7 @@ Note the new `-C | -c` flag.
 
 Looking at our 2 commits:
 
-{% highlight ruby %}
+{% highlight bash %}
   
 pick 996b0 work in progress
 pick 59f3a feature finished
@@ -67,7 +67,7 @@ Let's imagine you want to meld them together (something which can be done with `
 
 Using `fixup` as we have in the past like so: 
 
-{% highlight ruby %}
+{% highlight bash %}
   
 pick 996b0 work in progress
 f 59f3a feature finished
@@ -80,7 +80,7 @@ will not do what we want. It will meld the commits together but it will leave us
 
 We could use `squash` like so: 
 
-{% highlight ruby %}
+{% highlight bash %}
   
 pick 996b0 work in progress
 s 59f3a feature finished
@@ -93,7 +93,7 @@ this will open a new editor which will allow you comment out the first commit me
 
 **This is where the new option we can pass to `fixup` is super handy.**
 
-{% highlight ruby %}
+{% highlight bash %}
   
 pick 996b0 work in progress
 f -C 59f3a feature finished
