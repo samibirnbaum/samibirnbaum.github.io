@@ -298,7 +298,3 @@ We have to carve out a way that works for us, and in order to do this we must cr
 We care about what it takes to build great software of the highest quality which can stand the test of time.
 
 I take pride in Human-led development.
-
-At thoughtbot we lead the way with Human-led development to ensure we design and build quality software that is resilient to change.
-
-If you find yourself veering towards AI-led development and want advice on how to get your project back on track or how to build out Human-led teams in the first place, [reach out to thoughtbot](https://thoughtbot.com/hire-us) and I'll be happy to have chat.
