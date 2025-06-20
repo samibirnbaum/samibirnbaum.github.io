@@ -10,18 +10,74 @@ layout: default
   </div>
   {% endif %}
 
+  <style>
+    .live-streams-columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      margin-bottom: 1em;
+    }
+    .live-streams-columns iframe {
+      flex: 0 1 48%;
+      max-width: 48%;
+      min-width: 320px;
+      box-sizing: border-box;
+    }
+    @media (max-width: 900px) {
+      .live-streams-columns {
+        flex-direction: column;
+        align-items: center;
+      }
+      .live-streams-columns iframe {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+
+    /* Podcast player and image responsiveness */
+    .podcast-row {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .podcast-row img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .podcast-row iframe {
+      flex: 1 1 0;
+      min-width: 200px;
+      max-width: 100%;
+    }
+    @media (max-width: 900px) {
+      .podcast-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+      }
+      .podcast-row img,
+      .podcast-row iframe {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100%;
+      }
+    }
+  </style>
+
   <div class="live-streams">
     <h2>Live Streams 🎥</h2>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XaO57kz4rqk?si=HvWfKcVum5rijEFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
+    <div class="live-streams-columns">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/5gh3mqAzjOY?si=vhSgi8VKHTM7xVfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/mrLu1EBHCrc?si=IX2252n3IKYJMaQN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SINqlSfPy-o?si=L900hk-rvR9YzsUa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/QwhJuVUd2s8?si=D-AyAKbNhJk0rDqz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     <hr color="gray">
-    
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/SINqlSfPy-o?si=L900hk-rvR9YzsUa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    <hr color="gray">
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/QwhJuVUd2s8?si=D-AyAKbNhJk0rDqz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 
   <div class="podcasts">
@@ -35,64 +91,87 @@ layout: default
 
     <hr color="gray">
 
-    <img src="img/gr-553.jpeg" alt="Your Image" width="200" height="200">
-    <iframe src="https://player.fireside.fm/v2/DiNRb69N+yy7iS0sb?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    <div class="podcast-row">
+      <img src="img/gr-553.jpeg" alt="Your Image" width="200" height="200">
+      <iframe src="https://player.fireside.fm/v2/DiNRb69N+yy7iS0sb?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    </div>
 
     <hr color="gray">
 
-    <img src="img/gr-ikook.jpeg" alt="Your Image" width="200" height="200">
-    <iframe src="https://player.fireside.fm/v2/DiNRb69N+mBuPkiIR?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
-
-
-    <hr color="gray">
-
-    <img src="img/gr-548.jpeg" alt="Your Image" width="200" height="200">
-    <iframe src="https://player.fireside.fm/v2/DiNRb69N+dgtN4FOK?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    <div class="podcast-row">
+      <img src="img/gr-ikook.jpeg" alt="Your Image" width="200" height="200">
+      <iframe src="https://player.fireside.fm/v2/DiNRb69N+mBuPkiIR?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    </div>
 
     <hr color="gray">
 
-    <img src="img/GR-CJ.png" alt="Your Image" width="200" height="200">
-    <iframe src="https://player.fireside.fm/v2/DiNRb69N+6x4yHa8s?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    <div class="podcast-row">
+      <img src="img/gr-548.jpeg" alt="Your Image" width="200" height="200">
+      <iframe src="https://player.fireside.fm/v2/DiNRb69N+dgtN4FOK?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    </div>
 
     <hr color="gray">
 
-    <img src="img/gr_542.PNG" alt="Your Image" width="200" height="200">
-    <iframe src="https://player.fireside.fm/v2/DiNRb69N+sR0K6Req?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    <div class="podcast-row">
+      <img src="img/GR-CJ.png" alt="Your Image" width="200" height="200">
+      <iframe src="https://player.fireside.fm/v2/DiNRb69N+6x4yHa8s?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    </div>
 
     <hr color="gray">
 
-    <img src="img/gr_540.jpeg" alt="Your Image" width="200" height="200">
-    <iframe src="https://player.fireside.fm/v2/DiNRb69N+7kbba_40?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    <div class="podcast-row">
+      <img src="img/gr_542.PNG" alt="Your Image" width="200" height="200">
+      <iframe src="https://player.fireside.fm/v2/DiNRb69N+sR0K6Req?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    </div>
 
     <hr color="gray">
 
-    <img src="img/gr-534.png" alt="Your Image" width="200" height="200">
-    <iframe src="https://player.fireside.fm/v2/DiNRb69N+cPtCOsdB?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    <div class="podcast-row">
+      <img src="img/gr_540.jpeg" alt="Your Image" width="200" height="200">
+      <iframe src="https://player.fireside.fm/v2/DiNRb69N+7kbba_40?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    </div>
 
     <hr color="gray">
 
-    <img src="img/gr-538.png" alt="Your Image" width="200" height="200">
-    <iframe src="https://player.fireside.fm/v2/DiNRb69N+6jsOG7RF?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    <div class="podcast-row">
+      <img src="img/gr-534.png" alt="Your Image" width="200" height="200">
+      <iframe src="https://player.fireside.fm/v2/DiNRb69N+cPtCOsdB?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    </div>
 
     <hr color="gray">
 
-    <img src="img/gr-537.png" alt="Your Image" width="200" height="200">
-    <iframe src="https://player.fireside.fm/v2/DiNRb69N+pbyCRoxh?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    <div class="podcast-row">
+      <img src="img/gr-538.png" alt="Your Image" width="200" height="200">
+      <iframe src="https://player.fireside.fm/v2/DiNRb69N+6jsOG7RF?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    </div>
 
     <hr color="gray">
 
-    <img src="img/gr-536.png" alt="Your Image" width="200" height="200">
-    <iframe src="https://player.fireside.fm/v2/DiNRb69N+EDg1ugTb?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    <div class="podcast-row">
+      <img src="img/gr-537.png" alt="Your Image" width="200" height="200">
+      <iframe src="https://player.fireside.fm/v2/DiNRb69N+pbyCRoxh?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    </div>
 
     <hr color="gray">
 
-    <img src="img/gr-532.png" alt="Your Image" width="200" height="200">
-    <iframe src="https://player.fireside.fm/v2/DiNRb69N+9klz4FZB?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    <div class="podcast-row">
+      <img src="img/gr-536.png" alt="Your Image" width="200" height="200">
+      <iframe src="https://player.fireside.fm/v2/DiNRb69N+EDg1ugTb?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    </div>
 
     <hr color="gray">
 
-    <img src="img/gr-530.png" alt="Your Image" width="200" height="200">
-    <iframe src="https://player.fireside.fm/v2/DiNRb69N+K7BZd-7P?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    <div class="podcast-row">
+      <img src="img/gr-532.png" alt="Your Image" width="200" height="200">
+      <iframe src="https://player.fireside.fm/v2/DiNRb69N+9klz4FZB?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <hr color="gray">
+
+    <div class="podcast-row">
+      <img src="img/gr-530.png" alt="Your Image" width="200" height="200">
+      <iframe src="https://player.fireside.fm/v2/DiNRb69N+K7BZd-7P?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+    </div>
 
   </div>
 
