@@ -8,11 +8,11 @@ theme_settings:
   title: Sami Birnbaum
   avatar: avatar.png
   # gravatar: https://www.gravatar.com/avatar/fdac9cf8b3c18cf35ef94b2e6e2554ba.jpg?f=y
-  description: "Sami Birnbaum's Portfolio | Projects | Case Studies | Posts | Contact | About" # used by search engines
+  description: "Sami Birnbaum's Portfolio | Projects | Podcasts | Live Streams | Case Studies | Posts | Contact | About" # used by search engines
 
   # Header and footer text
   header_text: >
-     <h1>Developer | Consultant | Dad.</h1>
+     <h1>Consultant | Developer | Podcaster</h1>
   header_text_feature_image:
   footer_text: >
    Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
